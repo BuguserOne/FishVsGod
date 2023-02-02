@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+
+<body>
+    <section class="section">
+        
+        <form action="" id="form" onsubmit="return false">
+
+            <article>
+                <div id="rounds">
+                    <p>ROUNDS</p>
+                    <span class="minus bg-dark">-</span>
+                    <input class="rounds" type="number" name="rounds" id="round" min="1" max="100" value="1">
+                    <span class="plus bg-dark">+</span>
+                </div>
+
+                <p id="playRounds"></p>
+            </article>
+
+            <article class="flex">
+                <p class="user">Fish</p>
+                <p id="result"><span id="userWins">0</span> : <span id="compWins">0</span></p>
+                <p class="comp">God</p>
+            </article>
+
+            <article>
+                <p id="output">Don't waste my time, start now!</p>
+                <div>
+                    <button class="glassButton" id="rockId" onclick="userChoice(rock)">Fist</button>
+                    <button class="glassButton" id="paperId" onclick="userChoice(paper)">Hand</button>
+                    <button class="glassButton" id="scissorsId" onclick="userChoice(scissors)">Spok</button>
+                </div> 
+            </article>
+            <br>
+            <button class="glassButton" type="button" onclick="location.reload();">RELOAD PAGE</button>
+        </form>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,114 @@
+/*                  GLOBAL                   */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(45deg, #6b6b6b 16.67%, #858585 16.67%, #858585 33.33%, #b3b3b3 33.33%, #b3b3b3 50%, #6b6b6b 50%, #6b6b6b 66.67%, #858585 66.67%, #858585 83.33%, #b3b3b3 83.33%, #b3b3b3 100%);
+  background-size: 284.85px 284.85px;
+}
+
+/* sass --watch assets/scss/main.scss assets/css/styles.css */
+
+
+.section {
+  font-size: 24px;
+  line-height: 1rem;
+  color: white;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+  margin: 100px auto;
+}
+
+.glassButton {
+  padding: 24px 32px;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(30px);
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.glassButton:hover {
+  background-color: rgba(220, 217, 217, 0.2);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 10px;
+}
+
+.rounds {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 0 2px
+  ;min-width: 35px;
+  text-align: center;
+}
+.plus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font: 30px/1 Arial,sans-serif;
+  text-align: center;
+  border-radius: 50%;
+  }
+.minus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  width: 30px;
+  height: 30px;
+  font: 30px/1 Arial,sans-serif;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+div {
+  text-align: center;
+}
+.minus:hover{
+  background-color: rgba(220, 217, 217, 0.2) !important; 
+}
+.plus:hover{
+  background-color: rgba(220, 217, 217, 0.2) !important;
+}
+
+input{  
+  border: 0;
+  width: 2%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:disabled{border-radius: 10px;
+}
